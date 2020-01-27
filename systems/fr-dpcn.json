@@ -1,0 +1,115 @@
+{
+  "name": "Front Range DPCN",
+  "type": "CPMS",
+  "contacts": {
+    "Wide": {
+      "type": "Group Call",
+      "publish": true,
+      "channel": true
+    },
+    "Local": {
+      "type": "Group Call",
+      "publish": true,
+      "channel": true
+    },
+    "Tac-1": {
+      "type": "Group Call",
+      "publish": true,
+      "channel": true
+    },
+    "Tac-2": {
+      "type": "Group Call",
+      "publish": true,
+      "channel": true
+    },
+    "Tac-3": {
+      "type": "Group Call",
+      "publish": true,
+      "channel": true
+    },
+    "Interop-1": {
+      "type": "Group Call",
+      "publish": true,
+      "channel": true
+    },
+    "Interop-2": {
+      "type": "Group Call",
+      "publish": true
+    },
+    "Interop-3": {
+      "type": "Group Call",
+      "publish": true
+    },
+    "Metro Traffic": {
+      "type": "Group Call",
+      "publish": true,
+      "channel": true
+    },
+    "WX": {
+      "type": "Group Call",
+      "publish": true,
+      "channel": true
+    },
+    "Tech Support": {
+      "type": "Group Call",
+      "publish": true,
+      "channel": true
+    },
+    "Test": {
+      "type": "Group Call",
+      "publish": true,
+      "channel": true
+    },
+    "BCARES": {
+      "type": "Group Call",
+      "publish": true
+    },
+    "CO ARES": {
+      "type": "Group Call",
+      "publish": true
+    },
+    "CRA": {
+      "type": "Group Call"
+    },
+    "CLARC": {
+      "type": "Group Call",
+      "publish": true
+    },
+    "DRC": {
+      "type": "Group Call",
+      "publish": true
+    },
+    "LARC": {
+      "type": "Group Call",
+      "publish": true
+    },
+    "NCARC": {
+      "type": "Group Call",
+      "publish": true
+    },
+    "PARC": {
+      "type": "Group Call",
+      "publish": true
+    },
+    "K0PRW Phil": {
+      "type": "Private Call",
+      "publish": true
+    },
+    "KC0ZBH Laura": {
+      "type": "Private Call",
+      "publish": true
+    },
+    "KE0TIJ Kelly": {
+      "type": "Private Call",
+      "publish": true
+    },
+    "The Rocinante": {
+      "type": "Private Call",
+      "publish": true
+    },
+    "The Polaris": {
+      "type": "Private Call",
+      "publish": true
+    }
+  }
+}
