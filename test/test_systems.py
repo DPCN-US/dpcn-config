@@ -2,10 +2,8 @@ import json
 import os
 import unittest
 
-from const import GROUP_CALL, PRIVATE_ID_MAX, PRIVATE_CALL, GROUP_ID_MAX
+from const import GROUP_CALL, PRIVATE_ID_MAX, PRIVATE_CALL, GROUP_ID_MAX, SYSTEM_DIR
 from util import gen_id
-
-SYSTEM_DIR = "../systems"
 
 
 class TestSystems(unittest.TestCase):
@@ -48,7 +46,6 @@ class TestSystems(unittest.TestCase):
                 id_list.append(id)
 
         self.assertEqual(len(id_list), len(set(id_list)), "System does not have unique IDs!")
-
 
 
 if __name__ == '__main__':
