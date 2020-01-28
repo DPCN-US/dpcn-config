@@ -2,7 +2,7 @@ import json
 import os
 import unittest
 
-from const import GROUP_CALL, PRIVATE_ID_MAX, PRIVATE_CALL, GROUP_ID_MAX, SYSTEM_DIR
+from const import GROUP_CALL, PRIVATE_ID_MAX, PRIVATE_CALL, GROUP_ID_MAX, SYSTEM_DIR, CONTACT_TYPES
 from util import gen_id
 
 
@@ -43,7 +43,8 @@ class TestSystems(unittest.TestCase):
                     id = system['contacts'][contact]['id']
                 else:
                     id = gen_id(contact, system['contacts'][contact])['id']
-                id_list.append(id)
+                if id:
+                    id_list.append(id)
 
         self.assertEqual(len(id_list), len(set(id_list)), "System does not have unique IDs!")
 
