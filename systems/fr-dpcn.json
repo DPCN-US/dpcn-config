@@ -2,6 +2,10 @@
   "name": "Front Range DPCN",
   "type": "CPMS",
   "contacts": {
+    "None": {
+      "type": null,
+      "channel": true
+    },
     "Wide": {
       "type": "Group Call",
       "publish": true,
@@ -32,14 +36,6 @@
       "publish": true,
       "channel": true
     },
-    "Interop-2": {
-      "type": "Group Call",
-      "publish": true
-    },
-    "Interop-3": {
-      "type": "Group Call",
-      "publish": true
-    },
     "Metro Traffic": {
       "type": "Group Call",
       "publish": true,
@@ -62,34 +58,43 @@
     },
     "BCARES": {
       "type": "Group Call",
-      "publish": true
+      "publish": true,
+      "channel": true
     },
     "CO ARES": {
       "type": "Group Call",
-      "publish": true
+      "publish": true,
+      "channel": true
     },
     "CRA": {
-      "type": "Group Call"
+      "type": "Group Call",
+      "publish": true,
+      "channel": true
     },
     "CLARC": {
       "type": "Group Call",
-      "publish": true
+      "publish": true,
+      "channel": true
     },
     "DRC": {
       "type": "Group Call",
-      "publish": true
+      "publish": true,
+      "channel": true
     },
     "LARC": {
       "type": "Group Call",
-      "publish": true
+      "publish": true,
+      "channel": true
     },
     "NCARC": {
       "type": "Group Call",
-      "publish": true
+      "publish": true,
+      "channel": true
     },
     "PARC": {
       "type": "Group Call",
-      "publish": true
+      "publish": true,
+      "channel": true
     },
     "K0PRW Phil": {
       "type": "Private Call",
