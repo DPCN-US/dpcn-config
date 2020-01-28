@@ -48,6 +48,12 @@ class TestSystems(unittest.TestCase):
 
         self.assertEqual(len(id_list), len(set(id_list)), "System does not have unique IDs!")
 
+    def test_type(self):
+        for system in self.systems:
+            for contact in system['contacts']:
+                type = system['contacts'][contact]['type']
+                if type not in CONTACT_TYPES:
+                    self.fail(f"{system['name']} {contact} unsupported type: {type}")
 
 if __name__ == '__main__':
     unittest.main()
