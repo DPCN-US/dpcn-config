@@ -27,12 +27,14 @@ for system in systems:
         print("Name             | Type         | ID")
         print("---------------- | ------------ | -----")
         rows = []
+        ic = 0
         for name in data['contacts']:
             contacts = data['contacts']
             contact = contacts[name]
             if 'publish' in contact and contact['publish']:
                 rows.append(
                     f"{name:16} | {contact['type']:12} | {contact['id']:5}")
+                ic += 1
         for r in sorted(rows):
             print(r)
 
@@ -40,19 +42,21 @@ for system in systems:
         print("Name             | ID")
         print("---------------- | -----")
         rows = []
+        ir = 0
         for name in data['contacts']:
             contacts = data['contacts']
             contact = contacts[name]
             if contact['type'] == PRIVATE_CALL:
                 rows.append(
                     f"{name:16} | {contact['id']:5}")
+                ir += 1
         for r in sorted(rows):
             print(r)
 
         print("\n## Channels\n")
-        print("No. | Name             | Code")
-        print("--- | ---------------- | ----------")
-        i = 1
+        print("Name             | Code")
+        print("---------------- | ----------")
+        iz = 0
         for name in data['contacts']:
             contacts = data['contacts']
             contact = contacts[name]
@@ -60,7 +64,11 @@ for system in systems:
                     and ('publish' in contact and contact['publish'])\
                     or contact['type'] is None:
                 print(
-                    f"{i:3} | {name:16} | {contact['code']}")
-                i += 1
+                    f"{name:16} | {contact['code']}")
+                iz += 1
+
+        print(f"\n{ic} contacts")
+        print(f"{ir} radios")
+        print(f"{iz} channels")
 
         print("\n----\n")
