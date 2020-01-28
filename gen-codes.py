@@ -1,7 +1,7 @@
 import json
 import os
 
-from const import CODE_OCTETS, SYSTEM_DIR, GROUP_CALL
+from const import CODE_OCTETS, SYSTEM_DIR, PRIVATE_CALL
 from util import cp_hash, gen_id
 
 systems = [f for f in os.listdir(SYSTEM_DIR) if os.path.isfile(os.path.join(SYSTEM_DIR, f))]
@@ -24,15 +24,15 @@ for system in systems:
         print(f"System type: {data['type']}\n")
 
         print("## Contacts\n")
-        print("Name             | Type         | ID    | Code")
-        print("---------------- | ------------ | ----- | ----------")
+        print("Name             | Type         | ID")
+        print("---------------- | ------------ | -----")
         rows = []
         for name in data['contacts']:
             contacts = data['contacts']
             contact = contacts[name]
             if 'publish' in contact and contact['publish']:
                 rows.append(
-                    f"{name:16} | {contact['type']:12} | {contact['id']:5} | {contact['code'] if 'code' in contact else ''}")
+                    f"{name:16} | {contact['type']:12} | {contact['id']:5}")
         for r in sorted(rows):
             print(r)
 
@@ -43,23 +43,24 @@ for system in systems:
         for name in data['contacts']:
             contacts = data['contacts']
             contact = contacts[name]
-            if contact['type'] == "Private Call":
+            if contact['type'] == PRIVATE_CALL:
                 rows.append(
                     f"{name:16} | {contact['id']:5}")
         for r in sorted(rows):
             print(r)
 
         print("\n## Channels\n")
-        print("No. | Name")
-        print("--- | ----------------")
+        print("No. | Name             | Code")
+        print("--- | ---------------- | ----------")
         i = 1
         for name in data['contacts']:
             contacts = data['contacts']
             contact = contacts[name]
-            if 'channel' in contact and contact['channel'] \
-                    and 'publish' in contact and contact['publish']:
+            if ('channel' in contact and contact['channel']) \
+                    and ('publish' in contact and contact['publish'])\
+                    or contact['type'] is None:
                 print(
-                    f"{i:3} | {name}")
+                    f"{i:3} | {name:16} | {contact['code']}")
                 i += 1
 
         print("\n----\n")
