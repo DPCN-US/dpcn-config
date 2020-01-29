@@ -55,7 +55,7 @@
       "type": "Group Call",
       "publish": true,
       "channel": {
-        "description": "Local repeater calling",
+        "description": "Local site calling",
         "sites": [
           0
         ]
