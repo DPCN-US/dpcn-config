@@ -10,18 +10,18 @@ for system in systems:
     with open(os.path.join(SYSTEM_DIR, system)) as json_file:
         data = json.load(json_file)
 
+        if 'code' not in data:
+            data['code'] = cp_hash(data['name'], CODE_OCTETS)
+
         for contact in data['contacts']:
             c = data['contacts'][contact]
 
             if 'id' not in c:
                 gen_id(contact, c)
 
-            if 'code' not in c \
-                    and 'channel' in c and c['channel']:
-                c['code'] = cp_hash(contact, CODE_OCTETS)
-
         print(f"# {data['name']}\n")
-        print(f"System type: {data['type']}\n")
+        print(f"System type: {data['type']}")
+        print(f"System code: {data['code']}\n")
 
         print("## Contacts\n")
         print("Name             | Type         | ID")
@@ -54,8 +54,8 @@ for system in systems:
             print(r)
 
         print("\n## Channels\n")
-        print("Name             | Code")
-        print("---------------- | ----------")
+        print("Name")
+        print("----------------")
         iz = 0
         for name in data['contacts']:
             contacts = data['contacts']
@@ -64,7 +64,7 @@ for system in systems:
                     and ('publish' in contact and contact['publish'])\
                     or contact['type'] is None:
                 print(
-                    f"{name:16} | {contact['code']}")
+                    f"{name:16}")
                 iz += 1
 
         print(f"\n{ic} contacts")
