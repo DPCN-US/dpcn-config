@@ -19,11 +19,14 @@ for system in systems:
             if 'id' not in c:
                 gen_id(contact, c)
 
-        print(f"# {data['name']}\n")
+        print(f"# {data['name']}")
+        print()
         print(f"System type: {data['type']}")
-        print(f"System code: {data['code']}\n")
+        print(f"System code: {data['code']}")
+        print()
 
-        print("## Contacts\n")
+        print("## Contacts")
+        print()
         print("Name             | Type         | ID")
         print("---------------- | ------------ | -----")
         rows = []
@@ -37,7 +40,9 @@ for system in systems:
         for r in sorted(rows):
             print(r)
 
-        print("\n## Radio IDs\n")
+        print()
+        print("## Radio IDs")
+        print()
         print("Name             | ID")
         print("---------------- | -----")
         rows = []
@@ -51,7 +56,9 @@ for system in systems:
         for r in sorted(rows):
             print(r)
 
-        print("\n## Channels\n")
+        print()
+        print("## Channels")
+        print()
         print("Name")
         print("----------------")
         iz = 0
@@ -61,8 +68,11 @@ for system in systems:
                 print(f"{name:16}")
                 iz += 1
 
-        print(f"\n{ic} contacts")
+        print()
+        print(f"{ic} contacts")
         print(f"{ir} radios")
         print(f"{iz} channels")
 
-        print("\n----\n")
+        print()
+        print("----")
+        print()
