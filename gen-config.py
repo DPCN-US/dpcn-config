@@ -49,7 +49,7 @@ for system in systems:
         ir = 0
         for name in data['contacts']:
             contact = data['contacts'][name]
-            if contact['type'] == PRIVATE_CALL:
+            if 'type' in contact and contact['type'] == PRIVATE_CALL:
                 rows.append(
                     f"{name:16} | {contact['id']:5}")
                 ir += 1

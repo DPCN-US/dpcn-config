@@ -16,14 +16,17 @@ def cp_hash(inpt: str, octets: int, fmt: str = "hex"):
 
 
 def gen_id(name, data) -> dict:
-    if data['type'] == PRIVATE_CALL:
-        data['id'] = cp_hash(name, PRIVATE_CALL_OCTETS, "int")
-    elif data['type'] == GROUP_CALL:
-        data['id'] = cp_hash(name, GROUP_CALL_OCTETS, "int")
-        if data['id'] == 255:
-            print(f"ERROR: Cannot use 255 for Group Call \"{name}\" unless All Call")
-    elif data['type'] is None:
-        data['id'] = None
+    if 'type' in data:
+        if data['type'] == PRIVATE_CALL:
+            data['id'] = cp_hash(name, PRIVATE_CALL_OCTETS, "int")
+        elif data['type'] == GROUP_CALL:
+            data['id'] = cp_hash(name, GROUP_CALL_OCTETS, "int")
+            if data['id'] == 255:
+                print(f"ERROR: Cannot use 255 for Group Call \"{name}\" unless All Call")
+        elif data['type'] is None:
+            data['id'] = None
+        else:
+            print(f"ERROR: unknown type for {name}: {data['type']}")
     else:
-        print(f"ERROR: unknown type for {name}: {data['type']}")
+        data['id'] = None
     return data

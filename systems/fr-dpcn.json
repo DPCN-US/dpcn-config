@@ -25,7 +25,6 @@
   },
   "contacts": {
     "None": {
-      "type": null,
       "channel": {
         "description": "No default contact, must select from menu",
         "sites": [

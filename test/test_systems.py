@@ -51,9 +51,10 @@ class TestSystems(unittest.TestCase):
     def test_type(self):
         for system in self.systems:
             for contact in system['contacts']:
-                type = system['contacts'][contact]['type']
-                if type not in CONTACT_TYPES:
-                    self.fail(f"{system['name']} {contact} unsupported type: {type}")
+                if 'type' in system['contacts'][contact]:
+                    type = system['contacts'][contact]['type']
+                    if type not in CONTACT_TYPES:
+                        self.fail(f"{system['name']} {contact} unsupported type: {type}")
 
     def test_contact_channel_sites(self):
         for system in self.systems:
