@@ -155,7 +155,7 @@
       "type": "Group Call",
       "publish": true,
       "channel": {
-        "description": "<a href=\"http://bouldercountyares.org\">Boulder County ARES</a>",
+        "description": "Boulder County ARES",
         "sites": [
           1
         ]
@@ -165,7 +165,7 @@
       "type": "Group Call",
       "publish": true,
       "channel": {
-        "description": "<a href=\"http://www.coloradoares.org\">Colorado Ares</a>",
+        "description": "Colorado Ares",
         "sites": [
           1,
           2,
@@ -179,7 +179,7 @@
       "type": "Group Call",
       "publish": true,
       "channel": {
-        "description": "<a href=\"http://www.w0cra.org/\">Colorado Repeater Association</a>",
+        "description": "Colorado Repeater Association",
         "sites": [
           1,
           2,
@@ -193,7 +193,7 @@
       "type": "Group Call",
       "publish": true,
       "channel": {
-        "description": "<a href=\"https://www.cablelabs.com\">CableLabs</a> Amateur Radio Club",
+        "description": "CableLabs Amateur Radio Club",
         "sites": [
           1
         ]
@@ -203,7 +203,7 @@
       "type": "Group Call",
       "publish": true,
       "channel": {
-        "description": "<a href=\"https://www.w0tx.org/\">Denver Radio Club</a>",
+        "description": "Denver Radio Club",
         "sites": [
           2
         ]
@@ -213,7 +213,7 @@
       "type": "Group Call",
       "publish": true,
       "channel": {
-        "description": "<a href=\"http://w0eno.org/\">Longmont Amateur Radio Club</a>",
+        "description": "Longmont Amateur Radio Club",
         "sites": [
           3
         ]
@@ -223,7 +223,7 @@
       "type": "Group Call",
       "publish": true,
       "channel": {
-        "description": "<a href=\"http://www.ncarc.net/\">Northern Colorado Amateur Radio Club</a>",
+        "description": "Northern Colorado Amateur Radio Club",
         "sites": [
           1,
           3
@@ -234,7 +234,7 @@
       "type": "Group Call",
       "publish": true,
       "channel": {
-        "description": "<a href=\"http://www.puebloradio.org/\">Pueblo Amateur Radio Club</a>",
+        "description": "Pueblo Amateur Radio Club",
         "sites": [
           4
         ]
