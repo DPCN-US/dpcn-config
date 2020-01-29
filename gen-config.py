@@ -29,8 +29,7 @@ for system in systems:
         rows = []
         ic = 0
         for name in data['contacts']:
-            contacts = data['contacts']
-            contact = contacts[name]
+            contact = data['contacts'][name]
             if 'publish' in contact and contact['publish']:
                 rows.append(
                     f"{name:16} | {contact['type']:12} | {contact['id']:5}")
@@ -44,8 +43,7 @@ for system in systems:
         rows = []
         ir = 0
         for name in data['contacts']:
-            contacts = data['contacts']
-            contact = contacts[name]
+            contact = data['contacts'][name]
             if contact['type'] == PRIVATE_CALL:
                 rows.append(
                     f"{name:16} | {contact['id']:5}")
@@ -58,13 +56,9 @@ for system in systems:
         print("----------------")
         iz = 0
         for name in data['contacts']:
-            contacts = data['contacts']
-            contact = contacts[name]
-            if ('channel' in contact and contact['channel']) \
-                    and ('publish' in contact and contact['publish'])\
-                    or contact['type'] is None:
-                print(
-                    f"{name:16}")
+            contact = data['contacts'][name]
+            if 'channel' in contact:
+                print(f"{name:16}")
                 iz += 1
 
         print(f"\n{ic} contacts")
