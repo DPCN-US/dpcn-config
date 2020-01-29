@@ -55,5 +55,34 @@ class TestSystems(unittest.TestCase):
                 if type not in CONTACT_TYPES:
                     self.fail(f"{system['name']} {contact} unsupported type: {type}")
 
+    def test_contact_channel_sites(self):
+        for system in self.systems:
+            for contact in system['contacts']:
+                if 'channel' in system['contacts'][contact]:
+                    for site_id in system['contacts'][contact]['channel']['sites']:
+                        if site_id != 0 and str(site_id) not in system['sites'].keys():
+                            self.fail(f"Site ID {site_id} not in {system['sites'].keys()}")
+
+    def test_system_name(self):
+        for system in self.systems:
+            if 'name' not in system:
+                self.fail(f"No 'name' in system {system}")
+
+    def test_system_type(self):
+        for system in self.systems:
+            if 'type' not in system:
+                self.fail(f"No 'type' in system {system}")
+
+    def test_system_sites(self):
+        for system in self.systems:
+            if 'sites' not in system:
+                self.fail(f"No 'sites' in system {system}")
+
+    def test_system_contacts(self):
+        for system in self.systems:
+            if 'contacts' not in system:
+                self.fail(f"No 'contacts' in system {system}")
+
+
 if __name__ == '__main__':
     unittest.main()
