@@ -165,7 +165,7 @@
       "type": "Group Call",
       "publish": true,
       "channel": {
-        "description": "Colorado Ares",
+        "description": "Colorado ARES",
         "sites": [
           1,
           2,
