@@ -2,11 +2,26 @@
   "name": "Front Range DPCN",
   "type": "CPMS",
   "sites": {
-    "1": "Boulder",
-    "2": "Denver",
-    "3": "Ft. Collins",
-    "4": "Colo. Springs",
-    "5": "Cheyenne"
+    "1": {
+      "name": "Boulder",
+      "status": "proposed"
+    },
+    "2": {
+      "name": "Denver",
+      "status": "proposed"
+    },
+    "3": {
+      "name": "Ft. Collins",
+      "status": "proposed"
+    },
+    "4": {
+      "name": "Colo. Springs",
+      "status": "proposed"
+    },
+    "5": {
+      "name": "Cheyenne",
+      "status": "proposed"
+    }
   },
   "contacts": {
     "None": {
