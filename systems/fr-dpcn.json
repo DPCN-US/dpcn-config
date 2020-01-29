@@ -4,174 +4,193 @@
   "contacts": {
     "None": {
       "type": null,
-      "channel": true,
-      "repeaters": [
-        "all"
-      ],
+      "channel": {
+        "repeaters": [
+          "all"
+        ]
+      },
       "description": "No default contact, must select from menu"
     },
     "Wide": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "all"
-      ],
+      "channel": {
+        "repeaters": [
+          "all"
+        ]
+      },
       "description": "Wide-area general calling"
     },
     "Local": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "local"
-      ],
+      "channel": {
+        "repeaters": [
+          "local"
+        ]
+      },
       "description": "Local repeater calling"
     },
     "Tac-1": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "all"
-      ],
+      "channel": {
+        "repeaters": [
+          "all"
+        ]
+      },
       "description": "Tactical communications"
     },
     "Tac-2": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "all"
-      ],
+      "channel": {
+        "repeaters": [
+          "all"
+        ]
+      },
       "description": "Tactical communications"
     },
     "Tac-3": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "all"
-      ],
+      "channel": {
+        "repeaters": [
+          "all"
+        ]
+      },
       "description": "Tactical communications"
     },
     "Interop-1": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "all"
-      ],
+      "channel": {
+        "repeaters": [
+          "all"
+        ]
+      },
       "description": "External system interconnect, as needed"
     },
     "Metro Traffic": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "Denver",
-        "Boulder"
-      ],
+      "channel": {
+        "repeaters": [
+          "Denver",
+          "Boulder"
+        ]
+      },
       "description": "Motorist assist, traffic reporting"
     },
     "WX": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "all"
-      ],
+      "channel": {
+        "repeaters": [
+          "all"
+        ]
+      },
       "description": "Severe weather monitoring"
     },
     "Tech Support": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "all"
-      ],
+      "channel": {
+        "repeaters": [
+          "all"
+        ]
+      },
       "description": "Technical support for FR-DPCN system"
     },
     "Test": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "local"
-      ],
+      "channel": {
+        "repeaters": [
+          "local"
+        ]
+      },
       "description": "Radio tests and checks"
     },
     "BCARES": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "Boulder"
-      ],
+      "channel": {
+        "repeaters": [
+          "Boulder"
+        ]
+      },
       "description": "[Boulder County ARES](http://bouldercountyares.org)"
     },
     "CO ARES": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "all"
-      ],
+      "channel": {
+        "repeaters": [
+          "all"
+        ]
+      },
       "description": "[Colorado ARES](http://www.coloradoares.org)"
     },
     "CRA": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "all"
-      ],
+      "channel": {
+        "repeaters": [
+          "all"
+        ]
+      },
       "description": "[Colorado Repeater Association](http://www.w0cra.org/)"
     },
     "CLARC": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "Boulder"
-      ],
+      "channel": {
+        "repeaters": [
+          "Boulder"
+        ]
+      },
       "description": "[CableLabs](https://www.cablelabs.com) Amateur Radio Club"
     },
     "DRC": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "Denver"
-      ],
+      "channel": {
+        "repeaters": [
+          "Denver"
+        ]
+      },
       "description": "[Denver Radio Club](https://www.w0tx.org/)"
     },
     "LARC": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "Fr. Collins"
-      ],
+      "channel": {
+        "repeaters": [
+          "Ft. Collins"
+        ]
+      },
       "description": "[Longmont Amateur Radio Club](http://w0eno.org/)"
     },
     "NCARC": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "Boulder",
-        "Ft. Collins"
-      ],
+      "channel": {
+        "repeaters": [
+          "Boulder",
+          "Ft. Collins"
+        ]
+      },
       "description": "[Northern Colorado Amateur Radio Club](http://www.ncarc.net/)"
     },
     "PARC": {
       "type": "Group Call",
       "publish": true,
-      "channel": true,
-      "repeaters": [
-        "Colo. Springs"
-      ],
+      "channel": {
+        "repeaters": [
+          "Colo. Springs"
+        ]
+      },
       "description": "[Pueblo Amateur Radio Club](http://www.puebloradio.org/)"
     },
     "K0PRW Phil": {
