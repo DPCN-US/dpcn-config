@@ -8,19 +8,19 @@
     },
     "2": {
       "name": "Denver",
-      "status": "proposed"
+      "status": "needs location"
     },
     "3": {
       "name": "Ft. Collins",
-      "status": "proposed"
+      "status": "needs location"
     },
     "4": {
       "name": "Colo. Springs",
-      "status": "proposed"
+      "status": "needs location"
     },
     "5": {
       "name": "Cheyenne",
-      "status": "proposed"
+      "status": "needs location"
     }
   },
   "contacts": {
