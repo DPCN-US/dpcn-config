@@ -203,16 +203,6 @@
         ]
       }
     },
-    "CLARC": {
-      "type": "Group Call",
-      "publish": true,
-      "channel": {
-        "description": "CableLabs Amateur Radio Club",
-        "sites": [
-          1
-        ]
-      }
-    },
     "DRC": {
       "type": "Group Call",
       "publish": true,
